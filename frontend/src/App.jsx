@@ -1,12 +1,7 @@
+import HomePage from "./pages/HomePage";
+
 function App() {
-  return (
-    <main className="app">
-      <section className="container">
-        <h1>TactiCup 26</h1>
-        <p>Where strategy defines the game.</p>
-      </section>
-    </main>
-  );
+  return <HomePage />;
 }
 
 export default App;
