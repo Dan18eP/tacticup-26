@@ -1,10 +1,12 @@
 import Hero from "../components/Hero";
+import StatusCard from "../components/StatusCard";
 
 function HomePage() {
     return (
         <main className="app">
-        <div className="container">
+        <div className="container app-shell">
             <Hero />
+            <StatusCard />
         </div>
         </main>
     );
