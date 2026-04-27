@@ -51,3 +51,6 @@ Backend simulation logic, authentication, and persistent data are still under de
 ## Notes
 This project is currently being developed as an academic prototype.  
 The current version focuses on interface structure, navigation flow, and simulator visualization before integrating the full simulation engine and database support.
+
+## Author
+Daniel Echeverría 
