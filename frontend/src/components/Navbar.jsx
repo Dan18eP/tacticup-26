@@ -1,4 +1,5 @@
 import "../styles/navbar.css";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/tacticup26logo.png";
 
 function Navbar() {
@@ -25,7 +26,7 @@ function Navbar() {
             </nav>
 
             <div className="navbar__actions">
-            <a href="SimulatorPage.jsx" className="btn btn--primary">Comenzar</a>
+            <Link to="/simulator" className="btn btn--primary">Comenzar</Link>
             </div>
         </div>
         </header>

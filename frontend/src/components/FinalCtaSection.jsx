@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/FinalCtaSection.css";
 
 function FinalCtaSection() {
@@ -17,7 +18,7 @@ function FinalCtaSection() {
             </p>
 
             <div className="final-cta-section__actions">
-            <a href="SimulatorPage.jsx" className="btn btn--primary">Ir al simulador</a>
+                <Link to="/simulator" className="btn btn--primary">Ir al simulador</Link>
             </div>
         </div>
         </section>
