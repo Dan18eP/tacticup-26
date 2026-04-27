@@ -19,13 +19,13 @@ function Navbar() {
 
             <nav className="navbar__nav" aria-label="Navegación principal">
             <a href="#inicio" className="navbar__link">Inicio</a>
-            <a href="#simulador" className="navbar__link">Simulador</a>
+            <a href="#funcionamiento" className="navbar__link">Funcionamiento</a>
             <a href="#equipos" className="navbar__link">Equipos</a>
             <a href="#tacticas" className="navbar__link">Tácticas</a>
             </nav>
 
             <div className="navbar__actions">
-            <button className="btn btn--primary">Comenzar</button>
+            <a href="SimulatorPage.jsx" className="btn btn--primary">Comenzar</a>
             </div>
         </div>
         </header>

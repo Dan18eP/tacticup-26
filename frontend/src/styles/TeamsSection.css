@@ -1,0 +1,106 @@
+.teams-section {
+    padding: var(--space-2xl);
+    background: rgba(11, 28, 52, 0.78);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.teams-section__header {
+    margin-bottom: var(--space-xl);
+}
+
+.teams-section__eyebrow {
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.teams-section__title {
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    margin-bottom: var(--space-sm);
+    line-height: 1.15;
+    color: var(--color-text);
+}
+
+.teams-section__description {
+    max-width: 65ch;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.teams-section__layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-lg);
+}
+
+.teams-section__panel {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+}
+
+.teams-section__panel--accent {
+    background: linear-gradient(
+        180deg,
+        rgba(158, 219, 47, 0.12),
+        rgba(212, 169, 61, 0.1)
+    );
+}
+
+.teams-section__panel-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+}
+
+.teams-section__panel-text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.teams-section__list {
+    list-style: none;
+    display: grid;
+    gap: var(--space-md);
+}
+
+.teams-section__list li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+}
+
+.teams-section__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .teams-section__layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .teams-section {
+        padding: var(--space-lg);
+    }
+
+    .teams-section__panel {
+        padding: var(--space-lg);
+    }
+}

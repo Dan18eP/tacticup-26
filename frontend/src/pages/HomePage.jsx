@@ -1,14 +1,35 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import StatusCard from "../components/StatusCard";
+import HowItWorksSection from "../components/HowItWorksSection";
+import TeamsSection from "../components/TeamsSection";
+import TacticsSection from "../components/TacticsSection";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 function HomePage() {
     return (
         <main className="app">
-        <Navbar />
+            <Navbar />
+
         <div className="container app-shell">
-            <Hero />
-            <StatusCard />
+            <section id="inicio">
+                <Hero />
+            </section>
+
+            <section id="funcionamiento">
+                <HowItWorksSection />
+            </section>
+
+            <section id="equipos">
+                <TeamsSection />
+            </section>
+
+            <section id="tacticas">
+                <TacticsSection />
+            </section>
+
+        
+            <FinalCtaSection />
+        
         </div>
         </main>
     );

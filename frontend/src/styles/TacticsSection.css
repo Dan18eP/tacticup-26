@@ -1,0 +1,81 @@
+.tactics-section {
+    padding: var(--space-2xl);
+    background: rgba(16, 40, 70, 0.78);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.tactics-section__header {
+    margin-bottom: var(--space-xl);
+}
+
+.tactics-section__eyebrow {
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.tactics-section__title {
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    margin-bottom: var(--space-sm);
+    line-height: 1.15;
+    color: var(--color-text);
+}
+
+.tactics-section__description {
+    max-width: 65ch;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.tactics-section__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.tactics-section__card {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tactics-section__card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(158, 219, 47, 0.25);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+
+.tactics-section__card-title {
+    margin-bottom: var(--space-sm);
+    font-size: 1.15rem;
+    color: var(--color-text);
+}
+
+.tactics-section__card-text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .tactics-section__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .tactics-section {
+        padding: var(--space-lg);
+    }
+
+    .tactics-section__card {
+        padding: var(--space-lg);
+    }
+}

@@ -1,0 +1,95 @@
+.how-it-works {
+    padding: var(--space-2xl);
+    background: rgba(16, 40, 70, 0.72);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.how-it-works__header {
+    margin-bottom: var(--space-xl);
+}
+
+.how-it-works__eyebrow {
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.how-it-works__title {
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    margin-bottom: var(--space-sm);
+    line-height: 1.15;
+    color: var(--color-text);
+}
+
+.how-it-works__description {
+    max-width: 65ch;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.how-it-works__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.how-it-works__card {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.how-it-works__card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(158, 219, 47, 0.3);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+.how-it-works__step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-bottom: var(--space-md);
+    border-radius: 999px;
+    background: rgba(158, 219, 47, 0.12);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.how-it-works__card-title {
+    margin-bottom: var(--space-sm);
+    font-size: 1.15rem;
+    color: var(--color-text);
+}
+
+.how-it-works__card-text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .how-it-works__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .how-it-works {
+        padding: var(--space-lg);
+    }
+
+    .how-it-works__card {
+        padding: var(--space-lg);
+    }
+}

@@ -1,3 +1,4 @@
+import "../styles/Hero.css";
 import logo from "../assets/images/logotacticup26fondo.png";
 
 function Hero() {
@@ -12,8 +13,8 @@ function Hero() {
                     con eventos dinámicos y comportamiento basado en la calidad de cada plantilla.</p>
 
                 <div className="hero__actions">
-                    <button className="btn btn--primary">Iniciar</button>
-                    <button className="btn btn--secondary">Explorar equipos</button>
+                    <a href="#funcionamiento" className="btn btn--primary">Ver cómo funciona</a>
+                    <a href="#tacticas" className="btn btn--secondary">Explorar tácticas</a>
                 </div>
             </div>
 
