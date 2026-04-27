@@ -5,16 +5,15 @@ function Hero() {
         <section className="hero">
             <div className="hero__content">
                 <span className="hero__badge">Interactive World Cup Simulator 2026</span>
-                <h1 className="hero__title">TactiCup 26</h1>
-                <p className="hero__subtitle">Where strategy defines the game.</p>
+                <h1 className="hero__title">Simula el Mundial 2026 desde la estrategia</h1>
+                <p className="hero__subtitle">TactiCup 26</p>
                 <p className="hero__description">
-                Simulador táctico del Mundial 2026 con visualización en tiempo real,
-                motor probabilístico de eventos y control estratégico del equipo por parte del usuario.
-                </p>
+                                    Elige selecciones, define la táctica y observa el partido en tiempo real
+                    con eventos dinámicos y comportamiento basado en la calidad de cada plantilla.</p>
 
                 <div className="hero__actions">
-                    <button className="btn btn--primary">Comenzar</button>
-                    <button className="btn btn--secondary">Ver arquitectura</button>
+                    <button className="btn btn--primary">Iniciar</button>
+                    <button className="btn btn--secondary">Explorar equipos</button>
                 </div>
             </div>
 
